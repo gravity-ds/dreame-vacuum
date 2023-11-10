@@ -1,59 +1,59 @@
 {
   "config": {
     "abort": {
-      "already_configured": "Device is already configured",
-      "cannot_connect": "Failed to connect."
+      "already_configured": "Устройство уже подключено",
+      "cannot_connect": "Ошибка подключения."
     },
     "error": {
-      "cannot_connect": "Failed to connect.",
-      "unsupported": "Device is not supported",
-      "wrong_token": "Checksum error, wrong token",
-      "2fa_required": "2FA Login required\n{url}",
-      "credentials_incomplete": "Credentials incomplete, please fill in username, password and country",
-      "login_error": "Could not login to Xiaomi Miio Cloud, check the credentials.",
-      "no_devices": "No supported devices found in this Xiaomi Miio cloud account on selected country."
+      "cannot_connect": "Ошибка подключения.",
+      "unsupported": "Устройство не поддерживается",
+      "wrong_token": "Ошибка проверки токена, неверный токен",
+      "2fa_required": "Требуется двухфакторная аутентификация\n{url}",
+      "credentials_incomplete": "Данные учётной записи не введены, пожадуйста заполните имя пользователя, пароль и регион",
+      "login_error": "Не удалось подключиться к облаку Xiaomi, проверьте учётные данные",
+      "no_devices": "В учётной записи Xiaomi для данного региона, не обнаружено поддерживаемых устройств"
     },
     "step": {
       "user": {
         "data": {
-          "configuration_type": "Configuration Type"
+          "configuration_type": "Тип настройки"
         },
-        "description": "Map feature requires cloud connection and provides automatic configuration. If you don't want to use the map feature, you can select manual configuration."
+        "description": "Для получения карты требует подключения к облаку Xiaomi и возможно только для автоматической настройки. Если вы не хотите использовать функцию карты, вы можете выбрать ручную настройку."
       },
       "without_map": {
         "data": {
-          "host": "Host",
-          "token": "Token"
+          "host": "IP-адрес",
+          "token": "Токен"
         },
-        "description": "You will need the 32 character API Token, see https://www.home-assistant.io/integrations/xiaomi_miio#retrieving-the-access-token for instructions."
+        "description": "Вам необходим 32-х значный ключ (токен), подробнее о его получении можете узнать тут: https://www.home-assistant.io/integrations/xiaomi_miio#retrieving-the-access-token"
       },
       "with_map": {
         "data": {
-          "username": "Username",
-          "password": "Password",
-          "country": "Server country",
-          "prefer_cloud": "Prefer cloud connection"
+          "username": "Имя пользователя",
+          "password": "Пароль",
+          "country": "Регион/сервер",
+          "prefer_cloud": "Предпочитаю облачное подключение"
         },
-        "description": "Log in to the Xiaomi Miio cloud, see https://www.openhab.org/addons/bindings/miio/#country-servers for the cloud server to use."
+        "description": "Подключитесь к облаку Xiaomi, посмотрите https://www.openhab.org/addons/bindings/miio/#country-servers для определения используемого вами сервера в зависимости от вашей страны."
       },
       "devices": {
         "data": {
-          "devices": "Supported Devices"
+          "devices": "Поддерживаемые устройства"
         },
-        "description": "Please select the Dreame Vacuum device you want to setup."
+        "description": "Пожалуйста, выберите робот-пылесос Dreame который вы хотите настроить."
       },
       "options": {
         "data": {
-          "name": "Name",
-          "color_scheme": "Map color scheme",
-          "icon_set": "Map icon set",
-          "notify": "Notification",
-          "map_objects": "Map objects"
+          "name": "Имя",
+          "color_scheme": "Цветовая схема карты",
+          "icon_set": "Набор значков карты",
+          "notify": "Уведомление",
+          "map_objects": "Объекты на карте"
         }
       },
       "reauth_confirm": {
-        "description": "Dreame Vacuum integration needs to re-authenticate your account in order to update the tokens or add missing cloud credentials.",
-        "title": "Reauthenticate Integration"
+        "description": "Интеграции Dreame Vacuum необходима повторная аутентификация для Вашей учётной записи для обновления токена или информации об учётной записи.",
+        "title": "Повторная аутентификация"
       }
     }
   },
@@ -61,390 +61,390 @@
     "step": {
       "init": {
         "data": {
-          "color_scheme": "Map color scheme",
-          "icon_set": "Map icon set",
-          "notify": "Notification",
-          "map_objects": "Map objects",
-          "configuration_type": "Configuration type",
-          "prefer_cloud": "Prefer cloud connection"
+          "color_scheme": "Цветовая схема карты",
+          "icon_set": "Набор значков карты",
+          "notify": "Уведомления",
+          "map_objects": "Объекты на карте",
+          "configuration_type": "Тип настройки",
+          "prefer_cloud": "Предпочитаю облачное подключение"
         }
       }
     },
     "error": {
-      "cloud_credentials_incomplete": "Cloud credentials incomplete, please fill in username, password and country"
+      "cloud_credentials_incomplete": "Данные учётной записи не полные, пожадуйста заполните имя пользователя, пароль и регион"
     }
   },
   "entity": {
     "select": {
       "suction_level": {
         "state": {
-          "quiet": "Quiet",
-          "standard": "Standard",
-          "strong": "Strong",
-          "turbo": "Turbo"
+          "quiet": "Тихий",
+          "standard": "Стандартный",
+          "strong": "Сильный",
+          "turbo": "Мощный"
         }
       },
       "water_volume": {
         "state": {
-          "low": "Low",
-          "medium": "Medium",
-          "high": "High"
+          "low": "Малый",
+          "medium": "Средний",
+          "high": "Большой"
         }
       },
       "mop_pad_humidity": {
         "state": {
-          "slightly_dry": "Slightly dry",
-          "moist": "Moist",
-          "wet": "Wet"
+          "slightly_dry": "Почти сухая",
+          "moist": "Влажная",
+          "wet": "Мокрая"
         }
       },
       "cleaning_mode": {
         "state": {
-          "sweeping": "Sweeping",
-          "mopping": "Mopping",
-          "sweeping_and_mopping": "Sweeping and mopping",
-          "mopping_after_sweeping": "Mopping after sweeping"
+          "sweeping": "Подметание",
+          "mopping": "Протирание",
+          "sweeping_and_mopping": "Подметание и протирание",
+          "mopping_after_sweeping": "Мытье после подметания"
         }
       },
       "carpet_sensitivity": {
         "state": {
-          "low": "Low",
-          "medium": "Medium",
-          "high": "High"
+          "low": "Низкая",
+          "medium": "Средняя",
+          "high": "Высокая"
         }
       },
       "carpet_cleaning": {
         "state": {
-          "avoidance": "Avoidance",
-          "adaptation": "Adaptation",
-          "remove_mop": "Remove Mop"
+          "off": "Выключенный",
+          "high_frequency": "Высокая частота",
+          "low_frequency": "Низкая частота"
         }
       },
       "mop_wash_level": {
         "state": {
-          "water_saving": "Water saving",
-          "daily": "Daily",
-          "deep": "Deep"
+          "water_saving": "Экономия воды",
+          "daily": "Повседневная",
+          "deep": "Сильное смачивание"
         }
       },
       "mopping_type": {
         "state": {
-          "accurate": "Accurate",
-          "daily": "Daily",
-          "deep": "Deep"
+          "accurate": "точный",
+          "daily": "Повседневная",
+          "deep": "Сильное смачивание"
         }
       },
       "wider_corner_coverage": {
         "state": {
-          "off": "Off",
-          "high_frequency": "High Frequency",
-          "low_frequency": "Low Frequency"
+          "off": "Выключенный",
+          "high_frequency": "Высокая частота",
+          "low_frequency": "Низкая частота"
         }
       },
       "floor_material": {
         "state": {
-          "none": "None",
-          "tile": "Floor tile",
-          "wood": "Wood floor"
+          "none": "Никто",
+          "tile": "Напольная плитка",
+          "wood": "Деревянный пол"
         }
       },
       "voice_assistant_language": {
         "state": {
-          "default": "Default",
-          "english": "English",
-          "german": "German",
-          "chinese": "Chinese"
+          "default": "По умолчанию",
+          "english": "Английский",
+          "german": "Немецкий",
+          "chinese": "Китайский"
         }
       }
     },
     "sensor": {
       "state": {
         "state": {
-          "unknown": "Unknown",
-          "sweeping": "Sweeping",
-          "charging": "Charging",
-          "error": "Error",
-          "idle": "[%key:common::state::idle%]",
-          "paused": "[%key:common::state::paused%]",
-          "returning": "Returning to dock",
-          "mopping": "Mopping",
-          "drying": "Drying",
-          "washing": "Washing",
-          "returning_to_wash": "Returning to wash",
-          "building": "Building",
-          "sweeping_and_mopping": "Sweeping and mopping",
-          "charging_completed": "Charging completed",
-          "upgrading": "Upgrading",
-          "clean_summon": "Summon to clean",
-          "station_reset": "Station reset",
-          "returning_install_mop": "Returning to install mop",
-          "returning_remove_mop": "Returning to remove mop",
-          "water_check": "Water checking",
-          "clean_add_water": "Cleaning and adding water",
-          "washing_paused": "Washing paused",
-          "auto_emptying": "Auto-Emptying",
-          "remote_control": "Remote controlling",
-          "smart_charging": "Smart charging",
-          "second_cleaning": "Second time cleaning",
-          "human_following": "Human following",
-          "spot_cleaning": "Spot cleaning",
-          "returning_auto_empty": "Returning to Auto-Empty",
-          "shortcut": "Shortcut",
-          "monitoring": "Monitoring",
-          "monitoring_paused": "Monitoring paused"
+          "unknown": "Неизвестно",
+          "sweeping": "Подметает",
+          "charging": "Зарядка",
+          "error": "Ошибка",
+          "idle": "Бездействие",
+          "paused": "Пауза",
+          "returning": "Возвращение на базу",
+          "mopping": "Протирает",
+          "drying": "Сушится",
+          "washing": "Полоскает тряпку",
+          "returning_to_wash": "Возвращается для полоскания тряпки",
+          "building": "Построение карты",
+          "sweeping_and_mopping": "Подметает и протирает",
+          "charging_completed": "Зарядка завершена",
+          "upgrading": "Обновляется",
+          "clean_summon": "Призвать на уборку",
+          "station_reset": "Сброс станции",
+          "returning_install_mop": "Возвращаемся к установке швабры",
+          "returning_remove_mop": "Возвращение, чтобы удалить швабру",
+          "water_check": "Проверка воды",
+          "clean_add_water": "Очистка и добавление воды",
+          "washing_paused": "Стирка приостановлена",
+          "auto_emptying": "Автоопорожнение",
+          "remote_control": "Дистанционное управление",
+          "smart_charging": "Умная зарядка",
+          "second_cleaning": "Уборка второй раз",
+          "human_following": "Человеческое следование",
+          "spot_cleaning": "Точечная уборка",
+          "returning_auto_empty": "Возврат к автоочищению",
+          "shortcut": "Ярлык",
+          "monitoring": "Мониторинг",
+          "monitoring_paused": "Мониторинг приостановлен"
         }
       },
       "status": {
         "state": {
-          "unknown": "Unknown",
-          "idle": "[%key:common::state::idle%]",
-          "paused": "[%key:common::state::paused%]",
-          "cleaning": "Cleaning",
-          "returning": "Returning to dock",
-          "spot_cleaning": "Spot cleaning",
-          "follow_wall_cleaning": "Follow wall cleaning",
-          "charging": "Charging",
+          "unknown": "Неизвестно",
+          "idle": "Бездействует",
+          "paused": "Пауза",
+          "cleaning": "Уборка",
+          "returning": "Возвращение на базу",
+          "spot_cleaning": "Точечная уборка",
+          "follow_wall_cleaning": "Уборка вдоль стен",
+          "charging": "Зарядка",
           "ota": "OTA",
           "fct": "FCT",
-          "wifi_set": "WiFi set",
-          "power_off": "Power off",
-          "factory": "Factory",
-          "error": "Error",
-          "remote_control": "Remote control",
-          "sleeping": "Sleeping",
-          "self_test": "Self test",
-          "factory_test": "Factory test",
-          "standby": "Standby",
-          "room_cleaning": "Room cleaning",
-          "zone_cleaning": "Zone cleaning",
-          "fast_mapping": "Fast mapping",
-          "cruising_path": "Cruising on path",
-          "cruising_point": "Cruising to a point",
-          "summon_clean": "Summon to clean",
-          "shortcut": "Shortcut",
-          "person_follow": "Person follow",
-          "water_check": "Water checking"
+          "wifi_set": "WiFi подключен",
+          "power_off": "Выключен",
+          "factory": "Заводское",
+          "error": "Ошибка",
+          "remote_control": "Удаленное управление",
+          "sleeping": "Спит",
+          "self_test": "Самопроверка",
+          "factory_test": "Заводское тестирование",
+          "standby": "Ожидает",
+          "room_cleaning": "Уборка комнаты",
+          "zone_cleaning": "Уборка зоны",
+          "fast_mapping": "Быстрое построение карты",
+          "cruising_path": "Круиз по пути",
+          "cruising_point": "Крейсерская точка",
+          "summon_clean": "Позовите, чтобы очистить",
+          "shortcut": "Ярлык",
+          "person_follow": "Человек следовать",
+          "water_check": "Проверка воды"
         }
       },
       "task_status": {
         "state": {
-          "unknown": "Unknown",
-          "completed": "Completed",
-          "cleaning": "Cleaning",
-          "zone_cleaning": "Zone cleaning",
-          "room_cleaning": "Room cleaning",
-          "spot_cleaning": "Spot cleaning",
-          "fast_mapping": "Fast mapping",
-          "cleaning_paused": "Cleaning paused",
-          "room_cleaning_paused": "Room cleaning paused",
-          "zone_cleaning_paused": "Zone cleaning paused",
-          "spot_cleaning_paused": "Spot cleaning paused",
-          "map_cleaning_paused": "Map cleaning paused",
-          "docking_paused": "Docking paused",
-          "mopping_paused": "Mopping paused",
-          "zone_mopping_paused": "Zone mopping paused",
-          "room_mopping_paused": "Room mopping paused",
-          "zone_docking_paused": "Zone docking paused",
-          "room_docking_paused": "Room docking paused",
-          "cruising_path": "Cruising on path",
-          "cruising_path_paused": "Cruising on path paused",
-          "cruising_point": "Cruising to a point",
-          "cruising_point_paused": "Cruising to a point paused",
-          "summon_clean_paused": "Summon to clean paused",
-          "returning_to_install_mop": "Returning to install mop",
-          "returning_to_remove_mop": "Returning to remove mop"
-        }
-      },
-      "mop": {
-        "state": {
-          "unknown": "Unknown",
-          "installed": "Installed",
-          "not_installed": "Not installed",
-          "mop_installed": "Mop installed",
-          "in_station": "In station"
+          "unknown": "Неизвестно",
+          "completed": "Завершено",
+          "cleaning": "Уборка",
+          "zone_cleaning": "Уборка зоны",
+          "room_cleaning": "Уборка комнаты",
+          "spot_cleaning": "Точечная уборка",
+          "fast_mapping": "Быстрое построение карты",
+          "cleaning_paused": "Уборка приостановлена",
+          "room_cleaning_paused": "Уборка комнаты приостановлена",
+          "zone_cleaning_paused": "Уборка зоны приостановлена",
+          "spot_cleaning_paused": "Точечная уборка приостановлена",
+          "map_cleaning_paused": "Полная уборка приостановлена",
+          "docking_paused": "Возврат на базу приостановлен",
+          "mopping_paused": "Влажная уборка приостановлена",
+          "zone_mopping_paused": "Зональная влажная уборка приостановлена",
+          "room_mopping_paused": "Влажная уборка комнаты приостановлена",
+          "zone_docking_paused": "Возврат на базу при уборке зоны приостановлен",
+          "room_docking_paused": "Возврат на базу при уборке комнаты приостановлен",
+          "cruising_path": "Круиз по пути",
+          "cruising_path_paused": "Движение по пути приостановлено",
+          "cruising_point": "Крейсерская точка",
+          "cruising_point_paused": "Крейсерская точка приостановлена",
+          "summon_clean_paused": "Вызов для сброса приостановлен",
+          "returning_to_install_mop": "Возвращение для установки швабры",
+          "returning_to_remove_mop": "Выполняется очистка швабры. Подождите"
         }
       },
       "water_tank": {
         "state": {
-          "unknown": "Unknown",
-          "installed": "Installed",
-          "not_installed": "Not installed",
-          "mop_installed": "Mop installed",
-          "in_station": "In station"
+          "unknown": "Неизвестно",
+          "installed": "Установлен",
+          "not_installed": "Не установлен",
+          "mop_installed": "Тряпка установлена",
+          "in_station": "Станция швабры"
+        }
+      },
+      "mop_pad": {
+        "state": {
+          "unknown": "Неизвестно",
+          "installed": "Установлен",
+          "not_installed": "Не установлен",
+          "mop_installed": "Тряпка установлена",
+          "in_station": "Станция швабры"
         }
       },
       "dust_collection": {
         "state": {
-          "unknown": "Unknown",
-          "not_available": "Not available",
-          "available": "Available"
+          "unknown": "Неизвестно",
+          "not_available": "Не установлен",
+          "available": "Установлен"
         }
       },
       "auto_empty_status": {
         "state": {
-          "unknown": "Unknown",
-          "idle": "[%key:common::state::idle%]",
-          "active": "Active",
-          "not_performed": "Not performed"
+          "unknown": "Неизвестно",
+          "idle": "Бездействие",
+          "active": "Активировано",
+          "not_performed": "Не выполнено"
         }
       },
       "error": {
         "state": {
-          "unknown": "Unknown error code",
-          "no_error": "No error",
-          "drop": "Wheels are suspended",
-          "cliff": "Cliff sensor error",
-          "bumper": "Collision sensor is stuck",
-          "gesture": "Robot is tilted",
-          "bumper_repeat": "Collision sensor is stuck",
-          "drop_repeat": "Wheels are suspended",
-          "optical_flow": "Optical flow sensor error",
-          "no_box": "Dust bin not installed",
-          "no_tank_box": "Water tank not installed",
-          "water_box_empty": "Water tank is empty",
-          "box_full": "The filter not dry or blocked",
-          "brush": "The main brush wrapped",
-          "side_brush": "The side brush wrapped",
-          "fan": "The filter not dry or blocked",
-          "left_wheel_motor": "The robot is stuck, or its left wheel may be blocked by foreign objects",
-          "right_wheel_motor": "The robot is stuck, or its right wheel may be blocked by foreign objects",
-          "turn_suffocate": "The robot is stuck, or cannot turn",
-          "forward_suffocate": "The robot is stuck, or cannot go forward",
-          "charger_get": "Cannot find base",
-          "battery_low": "Low battery",
-          "charge_fault": "Charging error",
-          "battery_percentage": "Battery level error",
-          "heart": "Internal error",
-          "camera_occlusion": "Visual positioning sensor error",
-          "move": "Move sensor error",
-          "flow_shielding": "Optical sensor error",
-          "infrared_shielding": "Infrared shielding error",
-          "charge_no_electric": "The charging dock is not powered on",
-          "battery_fault": "Battery error",
-          "fan_speed_error": "Fan speed sensor error",
-          "left_wheell_speed": "Left wheel may be blocked by foreign objects",
-          "right_wheell_speed": "Right wheel may be blocked by foreign objects",
-          "bmi055_acce": "Accelerometer error",
-          "bmi055_gyro": "Gyro error",
-          "xv7001": "Gyro error",
-          "left_magnet": "Left magnet sensor error",
-          "right_magnet": "Right magnet sensor error",
-          "flow_error": "Flow sensor error",
-          "infrared_fault": "Infrared error",
-          "camera_fault": "Camera error",
-          "strong_magnet": "Strong magnetic field detected",
-          "water_pump": "Water pump error",
-          "rtc": "RTC error",
-          "auto_key_trig": "Internal error",
-          "p3v3": "Internal error",
-          "camera_idle": "Internal error",
-          "blocked": "Cleanup route is blocked, returning to the dock.",
-          "lds_error": "Laser distance sensor error",
-          "lds_bumper": "Laser distance sensor bumper error",
-          "filter_blocked": "The filter not dry or blocked",
-          "edge": "Edge sensor error",
-          "carpet": "Please start the robot in non-carpet area.",
-          "laser": "The 3D obstacle avoidance sensor is malfunctioning.",
-          "ultrasonic": "The ultrasonic sensor is malfunctioning.",
-          "no_go_zone": "No-Go zone or virtual wall detected.",
-          "route": "Cleanup route is blocked.",
-          "restricted": "Detected that the vacuum-mop is in a restricted area.",
-          "remove_mop": "Mopping completed. Please remove and clean the mop in time.",
-          "mop_removed": "The mop pad comes off during the cleaning task.",
-          "mop_pad_stop_rotate": "The mop pad has stopped rotating.",
-          "bin_full": "The dust collection bag is full, or the air duct is blocked.",
-          "bin_open": "The upper cover of auto-empty base is not closed, or the dust collection bag is not installed.",
-          "water_tank": "The clean water tank is not installed.",
-          "dirty_water_tank": "The dirty water tank is full or not installed.",
-          "water_tank_dry": "Low water level in the clean water tank, please fill with water timely.",
-          "dirty_water_tank_blocked": "Dirty water tank blocked.",
-          "dirty_water_tank_pump": "Dirty water tank pump error.",
-          "mop_pad": "The washboard is not installed properly.",
-          "wet_mop_pad": "The water level of the washboard is abnormal, please clean the washboard timely.",
-          "clean_mop_pad": "The cleaning task is complete, please clean the mop pad washboard.",
-          "clean_tank_level": "Check and fill the clean water tank.",
-          "station_disconnected": "Base station not powered on",
-          "dirty_tank_level": "The water level in the used water tank is too high.",
-          "washboard_level": "Water level in the washboard is too high.",
-          "no_mop_in_station": "Mop pad is not in the station.",
-          "dust_bag_full": "Dust bag is full or vents are blocked."
+          "unknown": "Неизвестная ошибка",
+          "no_error": "Ошибок нет",
+          "drop": "Колеса на весу",
+          "cliff": "Ошибка датчика падения",
+          "bumper": "Датчик столкновения застрял",
+          "gesture": "Робот наклонен",
+          "bumper_repeat": "Датчик столкновения заблокирован",
+          "drop_repeat": "Колеса на весу",
+          "optical_flow": "Ошибка оптического датчика",
+          "no_box": "Контейнер для мусора не установлен",
+          "no_tank_box": "Бак для воды не установлен",
+          "water_box_empty": "Бак для воды пуст",
+          "box_full": "Фильтр мокрый или засорился",
+          "brush": "Что-то намоталось на основную щетку",
+          "side_brush": "Что-то намоталось на боковую щетку",
+          "fan": "Фильтр мокрый или засорился",
+          "left_wheel_motor": "Робот застрял, его левое колесо может быть заблокировано",
+          "right_wheel_motor": "Робот застрял, его правое колесо может быть заблокировано",
+          "turn_suffocate": "Робот застрял и не может развернуться",
+          "forward_suffocate": "Робот застрял и не может продолжить движения вперед",
+          "charger_get": "Невозможно найти зарядную станцию",
+          "battery_low": "Низкий заряд",
+          "charge_fault": "Ошибка зарядки",
+          "battery_percentage": "Ошибка уровня заряда",
+          "heart": "Внутренняя ошибка",
+          "camera_occlusion": "Ошибка датчика позиционирования",
+          "move": "Ошибка датчика перемещения",
+          "flow_shielding": "Ошибка оптического датчика",
+          "infrared_shielding": "Ошибка ИК-датчика",
+          "charge_no_electric": "Зарядная станция не подключена к источнику энергии",
+          "battery_fault": "Ошибка батереи",
+          "fan_speed": "Ошибка датчика мощности всасывания",
+          "left_wheell_speed": "Левое колесо может быть заблокировано посторонними предметами",
+          "right_wheell_speed": "Правое колесо может быть заблокировано посторонними предметами",
+          "bmi055_acce": "Ошибка акселерометра",
+          "bmi055_gyro": "Ошибка гироскопа",
+          "xv7001": "Ошибка гироскопа",
+          "left_magnet": "Ошибка датчика левого магнита",
+          "right_magnet": "Ошибка датчика правого магнита",
+          "flow_error": "Ошибка датчика расхода",
+          "infrared_fault": "Ошибка инфракрасного датчика",
+          "camera_fault": "Ошибка камеры",
+          "strong_magnet": "Обнаружено сильное магнитное поле",
+          "water_pump": "Ошибка помпы подачи воды",
+          "rtc": "Ошибка RTC",
+          "auto_key_trig": "Внутренняя ошибка",
+          "p3v3": "Внутренняя ошибка",
+          "camera_idle": "Внутренняя ошибка",
+          "blocked": "Маршрут уборки заблокирован, возврат на док-станцию",
+          "lds_error": "Ошибка лазерного датчика расстояния",
+          "lds_bumper": "Ошибка бампера лазерного датчика расстояния",
+          "filter_blocked": "Фильтр влажный или забит",
+          "edge": "Ошибка датчика падения",
+          "carpet": "Пожалуйста, запустите робота в зоне, не покрытой ковром",
+          "laser": "Неисправен 3D-датчик обхода препятствий",
+          "ultrasonic": "Ультразвуковой датчик неисправен",
+          "no_go_zone": "Обнаружена запретная зона или виртуальная стена",
+          "route": "Маршрут уборки заблокирован",
+          "restricted": "Робот-пылесос находится в запретной зоне",
+          "remove_mop": "Уборка завершена Снимите и промойте тряпку",
+          "mop_removed": "Тряпка отстегнулась во время уборки",
+          "mop_pad_stop_rotate": "Швабра не вращается.",
+          "bin_full": "Контейнер для мусор полный или фильтр забит",
+          "bin_open": "Верхняя крышка контейнера для самоочистки не закрыта или не установлен мешок",
+          "water_tank": "Резервуар для чистой воды не установлен",
+          "dirty_water_tank": "Резервуар для грязной воды не установлен",
+          "water_tank_dry": "Низкий уровень воды в резервуаре для чистой воды, пожалуйста, своевременно наполняйте его водой",
+          "dirty_water_tank_blocked": "Бак для грязной воды заблокирован",
+          "dirty_water_tank_pump": "Ошибка насоса резервуара для грязной воды",
+          "mop_pad": "Станция для чистки салфеток установлена не правильно",
+          "wet_mop_pad": "Уровень воды в станции для чистки салфеток ненормальный, пожалуйста, своевременно чистите станцию для чистки салфеток",
+          "clean_mop_pad": "Уборка завершена, пожадуйста, очистите станцию для чистки салфеток",
+          "clean_tank_level": "Проверьте бак и заполните его как можно скорее.",
+          "station_disconnected": "Базовая станция не включена",
+          "dirty_tank_level": "Уровень воды в резервуаре для использованной воды слишком высок.",
+          "washboard_level": "Уровень воды в стиральной доске слишком высок.",
+          "no_mop_in_station": "Швабры нет на станции.",
+          "dust_bag_full": "Пылесборник полон или забиты вентиляционные отверстия."
         }
       },
       "charging_status": {
         "state": {
-          "unknown": "Unknown",
-          "charging": "Charging",
-          "not_charging": "Not charging",
-          "return_to_charge": "Return to charge",
-          "charging_completed": "Charging completed"
+          "unknown": "Неизвестно",
+          "charging": "Заряжается",
+          "not_charging": "Не заряжается",
+          "return_to_charge": "Возврат на зарядку",
+          "charging_completed": "Зарядка завершена"
         }
       },
       "relocation_status": {
         "state": {
-          "unknown": "Unknown",
-          "located": "Located",
-          "locating": "Locating",
-          "failed": "Failed",
-          "success": "Success"
+          "unknown": "Неизвестно",
+          "located": "Обнаружен",
+          "locating": "Определение местонахождения",
+          "failed": "Не успешно",
+          "success": "Успешно"
         }
       },
       "self_wash_base_status": {
         "state": {
-          "unknown": "Unknown",
-          "idle": "[%key:common::state::idle%]",
-          "washing": "Washing",
-          "drying": "Drying",
-          "paused": "Paused",
-          "returning": "Returning to wash",
-          "clean_add_water": "Cleaning and adding water",
-          "adding_water": "Adding water"
+          "unknown": "Неизвестно",
+          "idle": "Бездействие",
+          "washing": "Промывка",
+          "drying": "Сушка",
+          "paused": "Пауза",
+          "returning": "Вовращение для мытья",
+          "clean_add_water": "Очистка и добавление воды",
+          "adding_water": "Пополнение воды"
         }
       },
       "low_water_warning": {
         "state": {
-          "no_warning": "No warning",
-          "no_water_left_dismiss": "Please check the clean water tank.",
-          "no_water_left": "The water in the clean water tank is about to be used up. Check and fill the clean water tank promptly.",
-          "no_water_left_after_clean": "Mop pad has been cleaned. Detected that the water in the clean water tank is insufficient, please fill the clean water tank and empty the used water tank.",
-          "no_water_for_clean": "Low water level in the clean water tank. Robot has switched to Vacuuming Mode.",
-          "low_water": "About to run out of water. Please fill the clean water tank.",
-          "tank_not_installed": "The clean water tank is not installed."
+          "no_warning": "Нет предупреждения",
+          "no_water_left_dismiss": "Пожалуйста, проверьте резервуар для чистой воды.",
+          "no_water_left": "Вода в резервуаре для чистой воды подходит к концу. ",
+          "no_water_left_after_clean": "Подушечка для швабры очищена. ",
+          "no_water_for_clean": "Низкий уровень воды в баке чистой воды. ",
+          "low_water": "Вот-вот закончится вода. ",
+          "tank_not_installed": "Резервуар для чистой воды не установлен."
         }
       },
       "stream_status": {
         "state": {
-          "unknown": "Unknown",
-          "idle": "[%key:common::state::idle%]",
-          "video": "Video",
-          "audio": "Audio",
-          "recording": "Recording"
+          "unknown": "Неизвестный",
+          "idle": "Праздный",
+          "video": "видео",
+          "audio": "Аудио",
+          "recording": "Запись"
         }
       },
       "drainage_status": {
         "state": {
-          "unknown": "Unknown",
-          "idle": "[%key:common::state::idle%]",
-          "draining": "Draining",
-          "draining_successful": "Draining successful",
-          "draining_failed": "Draining failed"
+          "unknown": "Неизвестный",
+          "idle": "Праздный",
+          "draining": "Осушение",
+          "draining_successful": "Слив выполнен успешно",
+          "draining_failed": "Ошибка слива"
         }
       },
       "task_type": {
         "state": {
-          "standard": "Standard cleaning",
-          "standard_paused": "Standard cleaning paused",
-          "custom": "Custom cleaning",
-          "custom_paused": "Custom cleaning paused",
-          "shortcut": "Shortcut cleaning",
-          "shortcut_paused": "Shortcut cleaning paused",
-          "scheduled": "Scheduled cleaning",
-          "scheduled_paused": "Scheduled cleaning paused",
-          "smart": "Smart cleaning",
-          "smart_paused": "Smart cleaning paused",
-          "partial": "Partial cleaning",
-          "partial_paused": "Partial cleaning paused",
-          "summon": "Summon cleaning",
-          "summon_paused": "Summon cleaning paused"
+          "standard": "Стандартная уборка",
+          "standard_paused": "Стандартная уборка приостановлена",
+          "custom": "Индивидуальная уборка",
+          "custom_paused": "Пользовательская очистка приостановлена",
+          "shortcut": "Очистка ярлыков",
+          "shortcut_paused": "Очистка ярлыков приостановлена",
+          "scheduled": "Плановая уборка",
+          "scheduled_paused": "Запланированная уборка приостановлена",
+          "smart": "Умная очистка",
+          "smart_paused": "Умная очистка приостановлена",
+          "partial": "Частичная очистка",
+          "partial_paused": "Частичная очистка приостановлена",
+          "summon": "Вызвать уборку",
+          "summon_paused": "Вызов уборки приостановлен"
         }
       }
     }
